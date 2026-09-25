@@ -1,0 +1,23 @@
+:root{--bg:#F5F7FB;--kart:#fff;--kart2:#EEF2F8;--metin:#0F1729;--ikincil:#5B6780;--vurgu:#0E7C89;--vurguMetin:#fff;--cizgi:#E2E7F0}
+@media(prefers-color-scheme:dark){:root{--bg:#0E1211;--kart:#1A201E;--kart2:#232B28;--metin:#F1F4F2;--ikincil:#A3AEA9;--vurgu:#2DBE92;--vurguMetin:#0E1211;--cizgi:#2B3431}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--metin);font:500 18px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Inter,sans-serif;padding:0 16px 112px}
+a{color:var(--vurgu)}
+header{font-size:14px;color:var(--ikincil);padding:14px 0 4px}
+main{max-width:680px;margin:0 auto}
+h1{font-size:24px;line-height:1.3;margin:8px 0 16px;font-weight:800}
+figure{margin:0 0 16px;background:#fff;border-radius:20px;padding:12px;text-align:center}
+figure img{max-width:100%;max-height:260px;height:auto}
+section,.kart{background:var(--kart);border-radius:20px;padding:16px;margin:0 0 16px;box-shadow:0 2px 12px rgba(15,23,41,.05)}
+h2{font-size:20px;margin:0 0 8px;display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+h2 small{font-size:12.5px;font-weight:600;color:var(--ikincil);background:var(--kart2);border-radius:999px;padding:3px 10px;white-space:nowrap}
+h3{font-size:18px;margin:16px 0 4px}
+p{margin:0 0 12px;white-space:pre-line}p:last-child{margin-bottom:0}
+footer{font-size:14px;color:var(--ikincil);padding:8px 0 24px;max-width:680px;margin:0 auto}footer p{margin:0 0 8px;white-space:normal}
+nav{position:fixed;left:0;right:0;bottom:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:var(--kart);box-shadow:0 -2px 16px rgba(15,23,41,.08);display:flex;gap:12px;justify-content:center}
+.btn{flex:1;max-width:330px;min-height:52px;display:flex;align-items:center;justify-content:center;border-radius:16px;font-weight:700;text-decoration:none;padding:12px 16px;text-align:center}
+.btn.b1{background:var(--vurgu);color:var(--vurguMetin)}.btn.b2{background:var(--kart2);color:var(--metin)}
+.btn.b2.on{outline:3px solid var(--vurgu)}
+.not{font-size:15px;color:var(--ikincil)}
+.kod{font:800 40px/1.2 ui-monospace,Menlo,Consolas,monospace;letter-spacing:.08em;color:var(--vurgu);margin:8px 0}
+ul{padding-left:22px;margin:0}li{margin:0 0 8px}
