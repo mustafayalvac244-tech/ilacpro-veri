@@ -9,4 +9,5 @@ T.C. Sağlık Bakanlığı TİTCK Kullanma Talimatı metinleri (bölümlere ayr�
 
 ## İlaç sayfaları (`ilac/<barkod>.html`)
 
-Her ruhsatlı ilaç için resmî Kullanma Talimatı sayfası: "Ne için kullanılır" satır içi, diğer bölümler `kt/<id>.json`'dan yüklenir; metin TİTCK KT'sinden olduğu gibi, yorum yok. Uygulamadaki "Gönder" bu bağlantıyı paylaşır; `indir/` iniş sayfası (`?kod=` ile yakın kodu gösterir); `sitemap-ilac.xml` + `robots.txt`. Üretim: ilaçpro deposunda `pipeline/41-ilac-sayfalari.js`.
+Her ruhsatlı ilaç için resmî Kullanma Talimatı sayfası: "Ne için kullanılır" satır içi, diğer bölümler `kt/<id>.json`'dan yüklenir; metin TİTCK KT'sinden olduğu gibi, yorum yok. Kutu görselleri `gorsel/<barkod>.jpg` (Supabase HD'den bir kez alınıp ≤800 px'e küçültülmüş; boyutlar `gorsel/_boyut.json`). "Ne için kullanılır" bölümü ayrıştırılamamış KT'lerin sayfası noindex ve sitemap dışıdır. Uygulamadaki "Gönder" bu bağlantıyı paylaşır; `indir/` iniş sayfası (`?kod=` ile yakın kodu gösterir); `sitemap-ilac.xml` + `robots.txt`. Üretim: ilaçpro deposunda `pipeline/41-ilac-sayfalari.js`.
+
